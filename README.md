@@ -1,3 +1,1 @@
-# hello-world
-My first repository on GitHub hhh
-  wakwkakw
+Make a website manage daily finances (learning)
