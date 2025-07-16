@@ -15,22 +15,22 @@
     <!--Hero website-->
     <header class="text-center mb-8 p-4 bg-blue-500 text-white rounded-lg shadow-lg">
         <h1>Manage Daily Finance</h1>
-        <p1>safe and safe</p1>
+        <p>safe and safe</p>
     </header>
 
     <main class="flex flex-col items-center bg-gray-150 p-4 rounded-lg shadow-lg">
         <!--Input-->
         <form>
             <div class="flex-col items-center mb-8 bg-gray-100 p-6 rounded-lg shadow-md">
-                <input type="text" id="text" placeholder="A new text" required>
-                <input type="number" id="number" placeholder="Cost money" required>
-                <input type="date" id="date" placeholder="A dateinput" required>
+                <input type="text" pattern="A-Za-z/s" id="textinput" placeholder="A new text" required>
+                <input type="number" id="numberinput" placeholder="Cost money" required>
+                <input type="date" id="dateinput" placeholder="A dateinput" required>
             </div>
         </form>
         <!--Button-->
         <div class="flex justify-center mb-8">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600">Add</button>
-            <button class="bg-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-600 ml-4">Delete</button>
+            <button id="addbuton" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600">Add</button>
+            <button id="deletebutton" class="bg-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-600 ml-4">Delete</button>
         </div>
         <!--Table-->
         <table class="w-full max-w-3xl mx-auto bg-white rounded-lg shadow-lg">
@@ -41,7 +41,7 @@
                     <th class="px-4 py-2">Date</th>
                 </tr>
             </thead>
-            <tbody class="text-center">
+            <tbody id="tablebody" class="text-center">
                 <tr>
                     <td class="px-4 py-2"></td>
                     <td class="px-4 py-2">No Cost</td>
